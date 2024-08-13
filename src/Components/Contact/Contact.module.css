@@ -1,0 +1,76 @@
+.wrapper {
+  background-image: linear-gradient(-60deg,
+      #465cf0 0%,
+      #7b9df4 100%);
+  padding: calc(var(--mantine-spacing-xl) * 2.5);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: calc(var(--mantine-spacing-xl) * 1.5);
+  }
+}
+
+.title {
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  color: var(--mantine-color-white);
+  line-height: 1;
+}
+
+.description {
+  color: var(--mantine-color-blue-0);
+  max-width: rem(300px);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.form {
+  padding: var(--mantine-spacing-xl);
+}
+
+.social {
+  color: var(--mantine-color-white);
+
+  @mixin hover {
+    color: var(--mantine-color-blue-1);
+  }
+}
+
+.input {
+  background-color: var(--mantine-color-white);
+  border-color: var(--mantine-color-gray-4);
+  color: var(--mantine-color-black);
+
+  &::placeholder {
+    color: var(--mantine-color-gray-5);
+  }
+}
+
+.inputLabel {
+  color: var(--mantine-color-black);
+}
+
+.control {
+  background-color: var(--mantine-color-blue-6);
+}
+
+.wrapper_icons {
+  display: flex;
+  align-items: center;
+  color: var(--mantine-color-white);
+}
+
+.icon {
+  margin-right: var(--mantine-spacing-md);
+  background-color: transparent;
+}
+
+.title_icons {
+  color: var(--mantine-color-blue-0);
+}
+
+.description_icons {
+  color: var(--mantine-color-white);
+}
